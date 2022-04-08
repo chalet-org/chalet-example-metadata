@@ -1,0 +1,54 @@
+{
+	"workspace": "Chalet Example - Metadata",
+	"version": "4.0.1",
+	"author": "Doe & Co.",
+	"description": "Workspace with metadata examples",
+	"license": "LICENSE.txt",
+	"readme": "README.md",
+	"homepage": "www.biz.town",
+	"abstracts:*": {
+		"language": "C++",
+		"metadata": {
+			"version": "2.0.1.984",
+			"license": "other_LICENSE.txt",
+			"readme": "other_README.md",
+			"homepage": "products.biz.town"
+		},
+		"settings:Cxx": {
+			"cppStandard": "c++20",
+			"precompiledHeader": "src/pch.hpp",
+			"includeDirs": "src"
+		},
+		"files": "src/**.cpp",
+		"configureFiles": "src/config.h.in"
+	},
+	"targets": {
+		"project-a": {
+			"kind": "executable",
+			"metadata": {
+				"name": "Project A",
+				"author": "John Doe",
+				"description": "The first project"
+			}
+		},
+		"project-b": {
+			"kind": "executable",
+			"metadata": {
+				"name": "Project B",
+				"author": "Jane Doe",
+				"description": "The second project"
+			}
+		},
+		"project-c": {
+			"kind": "executable"
+		}
+	},
+	"distribution": {
+		"new-project": {
+			"kind": "bundle",
+			"include": [
+				"${buildDir}/new-project"
+			]
+		}
+	}
+}
