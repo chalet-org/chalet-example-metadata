@@ -16,6 +16,7 @@
 		},
 		"settings:Cxx": {
 			"cppStandard": "c++20",
+			"warningsPreset": "pedantic",
 			"precompiledHeader": "src/pch.hpp",
 			"includeDirs": "src"
 		},
