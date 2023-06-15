@@ -45,10 +45,12 @@
 		}
 	},
 	"distribution": {
-		"new-project": {
+		"all": {
 			"kind": "bundle",
 			"include": [
-				"${buildDir}/new-project"
+				"${buildDir}/project-a",
+				"${buildDir}/project-b",
+				"${buildDir}/project-c"
 			]
 		}
 	}
