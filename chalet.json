@@ -18,7 +18,10 @@
 			"cppStandard": "c++20",
 			"warningsPreset": "pedantic",
 			"precompiledHeader": "src/pch.hpp",
-			"includeDirs": "src"
+			"includeDirs": "src",
+			"defines[:debug]": [
+				"_DEBUG"
+			]
 		},
 		"files": "src/**.cpp",
 		"configureFiles": "src/config.h.in"

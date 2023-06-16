@@ -23,3 +23,12 @@
 #define PROJECT_VER_MINOR "${meta:versionMinor}"
 #define PROJECT_VER_PATCH "${meta:versionPatch}"
 #define PROJECT_VER_TWEAK "${meta:versionTweak}"
+
+#define BUILD_ARCHITECTURE "${targetTriple}"
+#define BUILD_CONFIGURATION "${configuration}"
+#define BUILD_IS_DEBUG "${defined:_DEBUG}"
+
+namespace test
+{
+constexpr bool isDebug = ${defined:_DEBUG};
+}
