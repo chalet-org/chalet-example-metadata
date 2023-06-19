@@ -25,6 +25,9 @@
 	},
 	"targets": {
 		"project-a": {
+			"kind": "executable"
+		},
+		"project-b": {
 			"kind": "executable",
 			"metadata": {
 				"name": "Project A",
@@ -32,7 +35,7 @@
 				"description": "The first project"
 			}
 		},
-		"project-b": {
+		"project-c": {
 			"kind": "executable",
 			"metadata": {
 				"name": "Project B",
@@ -40,8 +43,21 @@
 				"description": "The second project"
 			}
 		},
-		"project-c": {
-			"kind": "executable"
+		"project-d": {
+			"kind": "executable",
+			"metadata": {
+				"name": "${meta:workspaceName}",
+				"author": "${meta:workspaceAuthor}",
+				"description": "${meta:workspaceDescription}",
+				"version": "${meta:workspaceVersion}",
+				"license": "${meta:workspaceLicense}",
+				"readme": "${meta:workspaceReadme}",
+				"homepage": "${meta:workspaceHomepage}"
+			}
+		},
+		"project-e": {
+			"kind": "executable",
+			"metadata": "workspace"
 		}
 	},
 	"distribution": {
