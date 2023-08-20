@@ -66,10 +66,12 @@
 	"distribution": {
 		"all": {
 			"kind": "bundle",
-			"include": [
-				"${buildDir}/project-a",
-				"${buildDir}/project-b",
-				"${buildDir}/project-c"
+			"buildTargets": [
+				"project-a",
+				"project-b",
+				"project-c",
+				"project-d",
+				"project-e"
 			]
 		}
 	}
