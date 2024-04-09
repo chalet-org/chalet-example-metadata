@@ -3,7 +3,7 @@
 	"version": "4.0.1",
 	"author": "Doe & Co.",
 	"description": "Workspace with metadata examples",
-	"license": "LICENSE.txt",
+	"license": "LICENSE",
 	"readme": "README.md",
 	"homepage": "www.biz.town",
 	"abstracts:*": {
