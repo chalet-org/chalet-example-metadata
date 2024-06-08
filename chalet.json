@@ -33,7 +33,7 @@
 		"project-b": {
 			"kind": "executable",
 			"metadata": {
-				"name": "Project A",
+				"name": "Project B",
 				"author": "John Doe",
 				"description": "The first project"
 			}
@@ -41,7 +41,7 @@
 		"project-c": {
 			"kind": "executable",
 			"metadata": {
-				"name": "Project B",
+				"name": "Project C",
 				"author": "Jane Doe",
 				"description": "The second project"
 			}
